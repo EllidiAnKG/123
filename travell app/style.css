@@ -130,17 +130,7 @@ main {
 	color: #18333E; 
 }
 
-section .nav__content {
-	display: flex; 
-	max-width: 380px;
-	width: 100%; 
-	justify-content: space-between;
-}
 
-section .nav__content a {
-	text-decoration: none;
-	color: gray;
-}
 
 
 
@@ -167,7 +157,7 @@ section .nav__content a {
 	margin-left: 15px;
 	margin-right: 15px;
 }
-.poster__title {
+.poster-title {
 	font-size: 22px; 
 }
 
@@ -329,7 +319,7 @@ section .nav__content a {
 	margin-left: 45px;
 }
 
-.other__tours  {
+.other-tours  {
 	border-radius: 25px; 
 }
 .spooky{
