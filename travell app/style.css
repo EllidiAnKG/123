@@ -142,12 +142,7 @@ main {
 	margin-top: 20px;
 	
 }
-.mn__img {
-	border-radius: 30px; 
-	margin-bottom: 21px; 
-	margin-top: 37px;
-	margin-right: 30px;
-}
+
 
 .ssilki{
 	margin-top: 10px;
@@ -254,7 +249,7 @@ main {
 	color: white; 
 	margin-top: -10px; 
 }
-.active__tour {
+.active-tour {
 	width: 457px;
 	height: 119px;
 	background: #18333E; 
