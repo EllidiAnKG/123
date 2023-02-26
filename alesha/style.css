@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    background-image: url("./img/lesha.jpg");
+    background-size: no-repeat;
+     background-size: cover;
+    font-family: sans-serif;
+    font-weight: 100;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .countdown-title {
+    color: black;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+  }
+  
+  .countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: #00bf96;
+    display: inline-block;
+  }
+  
+  .countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816a;
+    display: inline-block;
+  }
+  
+  .countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+.countdown-title {
+  font-family: 'Rubik One', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #ee3535 33%, #ff06d6 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 20px auto;
+}
+.alesha{
+    max-width: 640px;
+    max-height: 640px;
+    float: right;
+    margin-bottom: 300px;
+    margin-left: 50px;
+    
+}
+.tag{
+    font-size: 30px;
+    color: #ff06d6;
+    margin-right: 50px;
+}
+.main_alesh{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.lesha4mo{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e2800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.taburetka{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e2800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.link{
+    text-decoration: none;
+    color: purple;
+    margin-left: 20px;
+    font-size: 50px;
+}
