@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="./scss/glitch.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<script src="libs/swiper/swiper-bundle.min.js" defer></script>
+	<script src="libs/particles/particles.js" defer></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="/home.html" class="logo">
+        <img src="./img/arcticons_gamelauncher.svg" />Project
+      </a>
+      <nav class="nav">
+        <a href="#" class="about"> О нас</a>
+        <a href="#"> Команды</a>
+        <a href="#"> Матвей зайка</a>
+      </nav>
+      <a href="/hub.html" class="login">Войти</a>
+    </header>
+    <main>
+      <div class="title">
+        <div class="mission">
+          <div class="maxtext">
+            <p class="create">Собери</p>
+            <p id="green" class="your">свою</p>
+            <p class="command">команду!</p>
+          </div>
+        </div>
+      </div>
+      <div class="desc">
+        <div class="text">
+          <p class="textmon">
+            <span id="green">Project</span> - бесплатный онлайн-сервис, который
+            поможет тебе собрать свою команду для игры в любимые видеоигры, или
+            же присоединиться к уже существующим командам. Регистрируйся,
+            заливай свою анкету в раздел “Игроки” и хорошо проведи время.
+          </p>
+        </div>
+      </div>
+      <div class="button_start">
+        <button class="start">Начни сейчас</button>
+        <button class="start">Начни сейчас</button>
+        <button class="start">Начни сейчас</button>
+        <button class="start">Начни сейчас</button>
+        <button class="start">Начни сейчас</button>
+        <button class="start">Начни сейчас</button>
+        <button class="start">Начни сейчас</button>
+        <button class="start">Начни сейчас</button>
+        <button class="start">Начни сейчас</button>
+      </div>
+      <div class="wrapper">
+        <span class="icon-close"
+          ><ion-icon name="close-circle-outline"></ion-icon
+        ></span>
+        <div class="form-box register">
+          <h2>Регистрация</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"
+                ><ion-icon name="person-circle-outline"></ion-icon
+              ></span>
+              <input type="text" required />
+              <label>Имя пользователя</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></span>
+              <input type="email" required />
+              <label>Почта</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="key-outline"></ion-icon></span>
+              <input type="password" required />
+              <label>Пароль</label>
+            </div>
+            <div class="remember-forgot">
+              <label
+                ><input type="checkbox" />Я согласен с условиями и политикой
+                сайта</label
+              >
+            </div>
+            <button type="submit" class="btn">Зарегестрироваться</button>
+            <div class="login-register">
+              <p>
+                У вас уже есть аккаунт?<a href="#" class="login-link">Войти</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box login">
+          <h2>Вход</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></span>
+              <input type="email" required/>
+              <label>Почта</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="key-outline"></ion-icon></span>
+              <input type="password" required/>
+              <label>Пароль</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" />Запомни меня</label>
+              <a href="#">Забыли пароль?</a>
+            </div>
+              <button type="submit" class="btn">Войти</button>
+            <div class="login-register">
+              <p>
+                У вас нет аккаунта?
+                <a href="#" class="register-link">Зарегестрируйтесь</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

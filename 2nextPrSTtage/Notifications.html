@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уведомления</title>
+    <link rel="stylesheet" href="Notifications.css">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<script src="libs/swiper/swiper-bundle.min.js" defer></script>
+	<script src="libs/particles/particles.js" defer></script>
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+    <input type="button" onclick="notifSet()" value="Уведомления">
+
+    <script>
+        const notifyMe = () => {
+            let notification = new Notification('Все еще ищешь команду?', {
+                tag: 'ache-mail',
+                body: 'пора сделать отдохнуть',
+                icon: './img/logo.jpg'
+            })
+        }
+
+        function notifSet() {
+            if(!('Nofications' in window))
+            alert ('Браузер не поддерживает уведомления.')
+            else if(Notification.permission === "granted")
+            setTimeout(notifyMe, 2000)
+            else if(Notification.permission !== "denied") {
+                Notification.requestPermission (function(permission){
+                    if(!('permission' in Notification))
+                    Notification.permission = permission
+                    if(permission === "granted")    
+                    setTimeout(notifyMe, 2000)
+                })
+            }
+        }
+    </script>
+    <div class="swiper-slide slider__item">
+        <canvas class="particles slider__layer" data-swiper-parallax="25%" data-color="#938086"></canvas>
+    </div>
+
+</body>
+
+</html>

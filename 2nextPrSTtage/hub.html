@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/hub.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<script src="libs/swiper/swiper-bundle.min.js" defer></script>
+	<script src="libs/particles/particles.js" defer></script>
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="./img/logo.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">XD</span>
+                    <span class="profession">Пару блантов</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Поиск...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="./home.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Главная</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Интересные факты</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./Notifications.html">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Уведомления</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav-text">Аналитика</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./Game_Photo.html">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav-text">3д фото</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./premium.html">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Подписка</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./melSE.html">
+                            <i class='bx bx-account icon'></i>
+                            <span class="text nav-text">Мои данные</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="./home.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Выйти</span>
+                    </a>
+                </li>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+    <section class="home">
+        <span class="aboba"></span>
+        <div class="text"></div>
+        <div class="swiper-slide slider__item">
+            <canvas class="particles slider__layer" data-swiper-parallax="25%" data-color="#938086"></canvas>
+        </div>
+    </section>
+    </div>
+
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        })
+    </script>
+
+</body>
+
+</html>
